@@ -1,0 +1,30 @@
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.csproj.AssemblyReference.cache
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.AssemblyInfoInputs.cache
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.AssemblyInfo.cs
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.csproj.CoreCompileInputs.cache
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Repository.deps.json
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Repository.dll
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\ref\DNEBlazor.Repository.dll
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Repository.pdb
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.dll
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\ref\DNEBlazor.Repository.dll
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.pdb
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Data.dll
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Data.pdb
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.csproj.CopyComplete
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Repository.deps.json
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Repository.dll
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\ref\DNEBlazor.Repository.dll
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Repository.pdb
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Data.dll
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Data.pdb
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.csproj.AssemblyReference.cache
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.AssemblyInfoInputs.cache
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.AssemblyInfo.cs
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.csproj.CoreCompileInputs.cache
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.csproj.CopyComplete
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.dll
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\ref\DNEBlazor.Repository.dll
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.pdb

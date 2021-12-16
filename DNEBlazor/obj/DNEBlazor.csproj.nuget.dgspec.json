@@ -1,0 +1,305 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor\\DNEBlazor.csproj": {}
+  },
+  "projects": {
+    "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj",
+        "projectName": "DNEBlazor.Data",
+        "projectPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj",
+        "packagesPath": "C:\\Users\\TAHMID RADIT\\.nuget\\packages\\",
+        "outputPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TAHMID RADIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj",
+        "projectName": "DNEBlazor.Repository",
+        "projectPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj",
+        "packagesPath": "C:\\Users\\TAHMID RADIT\\.nuget\\packages\\",
+        "outputPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TAHMID RADIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
+                "projectPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Service\\DNEBlazor.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Service\\DNEBlazor.Service.csproj",
+        "projectName": "DNEBlazor.Service",
+        "projectPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Service\\DNEBlazor.Service.csproj",
+        "packagesPath": "C:\\Users\\TAHMID RADIT\\.nuget\\packages\\",
+        "outputPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TAHMID RADIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
+                "projectPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj"
+              },
+              "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {
+                "projectPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor\\DNEBlazor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor\\DNEBlazor.csproj",
+        "projectName": "DNEBlazor",
+        "projectPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor\\DNEBlazor.csproj",
+        "packagesPath": "C:\\Users\\TAHMID RADIT\\.nuget\\packages\\",
+        "outputPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TAHMID RADIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {
+                "projectPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj"
+              },
+              "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Service\\DNEBlazor.Service.csproj": {
+                "projectPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Service\\DNEBlazor.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

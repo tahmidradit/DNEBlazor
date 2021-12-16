@@ -1,0 +1,24 @@
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Data\bin\Debug\net6.0\DNEBlazor.Data.deps.json
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Data\bin\Debug\net6.0\DNEBlazor.Data.dll
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Data\bin\Debug\net6.0\ref\DNEBlazor.Data.dll
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Data\bin\Debug\net6.0\DNEBlazor.Data.pdb
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.csproj.AssemblyReference.cache
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.AssemblyInfoInputs.cache
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.AssemblyInfo.cs
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.csproj.CoreCompileInputs.cache
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.dll
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\ref\DNEBlazor.Data.dll
+G:\Projects\.NET C#\Web Application\Demo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.pdb
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Data\bin\Debug\net6.0\DNEBlazor.Data.deps.json
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Data\bin\Debug\net6.0\DNEBlazor.Data.dll
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Data\bin\Debug\net6.0\ref\DNEBlazor.Data.dll
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Data\bin\Debug\net6.0\DNEBlazor.Data.pdb
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.csproj.AssemblyReference.cache
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.AssemblyInfoInputs.cache
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.AssemblyInfo.cs
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.csproj.CoreCompileInputs.cache
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.dll
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\ref\DNEBlazor.Data.dll
+F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.pdb
