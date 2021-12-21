@@ -28,3 +28,18 @@ F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazo
 F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.dll
 F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\ref\DNEBlazor.Repository.dll
 F:\Projects\.NET\Active\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.pdb
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Repository.deps.json
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Repository.dll
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\ref\DNEBlazor.Repository.dll
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Repository.pdb
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Data.dll
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Data.pdb
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.csproj.AssemblyReference.cache
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.AssemblyInfoInputs.cache
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.AssemblyInfo.cs
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.csproj.CoreCompileInputs.cache
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.csproj.CopyComplete
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.dll
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\ref\DNEBlazor.Repository.dll
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.pdb

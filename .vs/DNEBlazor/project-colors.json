@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fe4a32cb-d795-4c25-b3d8-c381d0c8233d": {
+      "ProjectGuid": "fe4a32cb-d795-4c25-b3d8-c381d0c8233d",
+      "DisplayName": "DNEBlazor",
+      "ColorIndex": 0
+    },
+    "3b4950ab-4651-4bf4-aed0-9d3b2ff5d107": {
+      "ProjectGuid": "3b4950ab-4651-4bf4-aed0-9d3b2ff5d107",
+      "DisplayName": "DNEBlazor.Data",
+      "ColorIndex": 1
+    },
+    "b9f694ff-4b77-4b2a-8b29-12468397d5ce": {
+      "ProjectGuid": "b9f694ff-4b77-4b2a-8b29-12468397d5ce",
+      "DisplayName": "DNEBlazor.Repository",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "21e94035-61a7-4995-9194-483203fb1116": {
+      "ProjectGuid": "21e94035-61a7-4995-9194-483203fb1116",
+      "DisplayName": "DNEBlazor.Service",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

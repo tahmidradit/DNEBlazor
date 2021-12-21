@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {}
+    "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
+    "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj",
+        "projectUniqueName": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj",
         "projectName": "DNEBlazor.Data",
-        "projectPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj",
+        "projectPath": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj",
         "packagesPath": "C:\\Users\\TAHMID RADIT\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\obj\\",
+        "outputPath": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNet.Identity.Core": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.AspNet.Identity.EntityFramework": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,14 +72,14 @@
         }
       }
     },
-    "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {
+    "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj",
+        "projectUniqueName": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj",
         "projectName": "DNEBlazor.Repository",
-        "projectPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj",
+        "projectPath": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj",
         "packagesPath": "C:\\Users\\TAHMID RADIT\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Repository\\obj\\",
+        "outputPath": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,8 +100,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
-                "projectPath": "F:\\Projects\\.NET\\GitRepo\\tahmidradit\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj"
+              "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
+                "projectPath": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj"
               }
             }
           }

@@ -15,6 +15,8 @@
 </head>
 <body>
     @RenderBody()
+    @RenderSection("scripts", required: false)
+    
 
     <div id="blazor-error-ui">
         <environment include="Staging,Production">
@@ -31,3 +33,7 @@
     <script src="https://kit.fontawesome.com/49cbe8ebac.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
+@section Scripts{
+
+}
