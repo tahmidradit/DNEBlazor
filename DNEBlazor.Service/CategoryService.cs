@@ -53,21 +53,5 @@ namespace DNEBlazor.Service
             context.SaveChanges();
             return this.GetCategory(Category.Id);
         }
-
-        //Category ICategory.PreloadData()
-        //{
-        //    UserName = httpContextAccessor.HttpContext.User.Identity.Name;
-        //    var user = userManager.FindByNameAsync(UserName);
-        //    var userId = user.Id;
-
-        //    Category catVM = new Category()
-        //    {
-        //        CreatedByUserId = userId.ToString(),
-        //        UpdatedByUserId = userId.ToString(),
-        //        DateCreated = DateTime.Now,
-        //        DateUpdated = DateTime.Now
-        //    };
-        //    return catVM;
-        //}
     }
 }

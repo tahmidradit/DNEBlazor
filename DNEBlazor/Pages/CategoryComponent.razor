@@ -17,7 +17,7 @@
         <div class="card text-white mb-3" style="max-width: 18rem;">
             <div class="card-header bg-info">Save Category</div>
             <div class="card-body">
-                <form> @*// do not use form tag to stop page reloading//*@
+                @*<form>*@ @*// do not use form tag to stop page reloading//*@
                     <label class="text-secondary">Name</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@category.Name" /> <br />
                     <label class="text-secondary">Created By</label>
@@ -29,7 +29,7 @@
                     <label class="text-secondary">Date Updated</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@category.DateUpdated" /> <br />
                     <a class="form-control btn btn-info text-white" @onclick="@(m =>Save())" style="width:15rem;"><i class="fas fa-plus"></i> &nbsp; Save</a>
-                </form>
+                @*</form>*@
             </div>
         </div>
     </div>
@@ -38,10 +38,12 @@
             <thead class="table table-primary">
                 <tr>
                     <th>Id</th>
+                    <th>Name</th>
                     <th>Created By</th>
                     <th>Updated By</th>
                     <th>Date Created</th>
                     <th>Date Updated</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -49,6 +51,7 @@
                 {
                     <tr>
                         <td>@category.Id</td>
+                        <td>@category.Name</td>
                         <td>@category.CreatedByUserId</td>
                         <td>@category.UpdatedByUserId</td>
                         <td>@category.DateCreated</td>
@@ -70,21 +73,14 @@
     List<Category> Categories = new List<Category>();
 
     public string UserName;
-    private readonly UserManager<IdentityUser> userManager;
-
-    public CategoryComponent(UserManager<IdentityUser> userManager)
-    {
-        this.userManager = userManager;
-    }
+    
     protected override void OnInitialized()
     {
         LoadCategories();
         UserName = httpContextAccessor.HttpContext.User.Identity.Name;
-        var user = userManager.FindByNameAsync(UserName);
-        var userId = user.Id; 
         category = new Category()
         {
-            CreatedByUserId = userId.ToString(),
+            CreatedByUserId = UserName,
             UpdatedByUserId = UserName,  
         };
     }
@@ -93,7 +89,6 @@
     {
         Categories = new List<Category>();
         Categories = iCategory.ToListCategories();
-        
         
     }
 

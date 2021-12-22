@@ -29,6 +29,8 @@ builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuth
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<IProduct, ProductService>();
 builder.Services.AddScoped<ICategory, CategoryService>();
+builder.Services.AddScoped<ILead, LeadService>();
+builder.Services.AddScoped<LeadService>();
 
 var app = builder.Build();
 

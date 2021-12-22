@@ -1518,7 +1518,3 @@ G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\obj\Debug\net6.0\DN
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\obj\Debug\net6.0\ref\DNEBlazor.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\obj\Debug\net6.0\DNEBlazor.pdb
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\obj\Debug\net6.0\DNEBlazor.genruntimeconfig.cache
-G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\EntityFramework.SqlServer.dll
-G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\EntityFramework.dll
-G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
-G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\Microsoft.AspNet.Identity.EntityFramework.dll
