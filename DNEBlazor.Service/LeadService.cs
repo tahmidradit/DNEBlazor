@@ -52,9 +52,9 @@ namespace DNEBlazor.Service
             return this.GetLead(lead.Id);
         }
 
-        public List<Category> RenderCategoryList()
+        public IEnumerable<Category> RenderCategoriesList()
         {
             return context.Categories.ToList();
-    }
+        }
     }
 }

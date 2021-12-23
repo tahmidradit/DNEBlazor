@@ -88,7 +88,7 @@
 
     Lead lead = new Lead();
     List<Lead> Leads = new List<Lead>();
-    List<Category> Categories;
+    IEnumerable<Category> Categories { get; set; }
     public string UserName;
 
     protected override void OnInitialized()
@@ -100,14 +100,13 @@
             CreatedByUserId = UserName,
             UpdatedByUserId = UserName,  
         };
-        Categories = Service.RenderCategoryList();
+        Categories = Service.RenderCategoriesList();
     }
 
     private void LoadLeads()
     {
         Leads = new List<Lead>();
         Leads = iLead.ToListLeads();
-
     }
 
     private void Remove(int Id)
