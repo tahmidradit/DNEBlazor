@@ -2,7 +2,10 @@ using DNEBlazor.Areas.Identity;
 using DNEBlazor.Data;
 using DNEBlazor.Repository;
 using DNEBlazor.Repository.Data;
+using DNEBlazor.Repository.Ecom;
+using DNEBlazor.Repository.Ecom.Category;
 using DNEBlazor.Service;
+using DNEBlazor.Service.Ecom;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
@@ -30,7 +33,10 @@ builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<IProduct, ProductService>();
 builder.Services.AddScoped<ICategory, CategoryService>();
 builder.Services.AddScoped<ILead, LeadService>();
+builder.Services.AddScoped<IProductCategory, ProductCategoryService>();
+builder.Services.AddScoped<IBrand, BrandService>();
 builder.Services.AddScoped<LeadService>();
+builder.Services.AddScoped<ProductService>();
 
 var app = builder.Build();
 

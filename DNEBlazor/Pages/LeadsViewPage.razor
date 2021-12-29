@@ -1,10 +1,9 @@
 ﻿@page "/leadsview"
 @using DNEBlazor.Data.Models;
 @using DNEBlazor.Repository.Data;
-@using DNEBlazor.Service
+@using DNEBlazor.Service;
 @using Microsoft.AspNetCore.Http;
 @using Microsoft.AspNetCore.Identity;
-@using DNEBlazor.Data.Models.ViewModels;
 @inject IHttpContextAccessor httpContextAccessor;
 @inject DNEBlazor.Repository.ILead iLead;
 @inherits OwningComponentBase<LeadService>

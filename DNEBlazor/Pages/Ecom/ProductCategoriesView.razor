@@ -1,0 +1,92 @@
+﻿@page "/productcategories"
+@using DNEBlazor.Data.Models;
+@using DNEBlazor.Repository.Data;
+
+@inject DNEBlazor.Repository.Ecom.Category.IProductCategory iProductCategory;
+
+<center>
+    <h3>Product Categories</h3> <br />
+</center>
+
+<div class="row">
+    <div class="col-4">
+        <div class="card text-white mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-info">Save Category</div>
+            <div class="card-body">
+                @*<form>*@ @*// do not use form tag to stop page reloading//*@
+                    <label class="text-secondary">Name</label>
+                    <input type="text" class="form-control" style="width:15rem;" @bind="@productCategory.Name" /> <br />
+                    <a class="form-control btn btn-info text-white" @onclick="@(m =>Save())" style="width:15rem;"><i class="fas fa-plus"></i> &nbsp; Save</a>
+                @*</form>*@
+            </div>
+        </div>
+    </div>
+    <div class="col-8">
+        <table class="table table-hover table-bordered table-sm text-center" style="background-color:lightskyblue" width="100%">
+            <thead class="table table-primary">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (ProductCategory productCategory in productCategories)
+                {
+                    <tr>
+                        <td>@productCategory.Id</td>
+                        <td>@productCategory.Name</td>
+                        <td>
+                            <a class="btn btn-dark text-white btn-sm" @onclick="@(m=>PreloadInputFields(@productCategory))"><i class="fas fa-edit"></i> &nbsp; Edit</a>
+                            <a class="btn btn-danger text-white btn-sm" @onclick="@(m=>Remove(@productCategory.Id))"><i class="fas fa-trash-alt"></i> &nbsp; Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+
+    ProductCategory productCategory = new ProductCategory();
+    List<ProductCategory> productCategories = new List<ProductCategory>();
+
+    protected override void OnInitialized()
+    {
+        LoadProductCategories();
+    }
+
+    private void LoadProductCategories()
+    {
+        productCategories = new List<ProductCategory>();
+        productCategories = iProductCategory.ToListProductCategory();
+        
+    }
+
+    private void Remove(int Id)
+    {
+        string delete = iProductCategory.Delete(Id);
+    }
+
+    private void Save()
+    {
+        if (productCategory.Id == 0)
+        {
+            productCategory = iProductCategory.Add(productCategory);
+        }
+        else
+        {
+            productCategory = iProductCategory.Update(productCategory);
+        }
+
+        productCategory = new ProductCategory();
+        LoadProductCategories();
+
+    }
+
+    private void PreloadInputFields(ProductCategory productCategoryDM)
+    {
+        productCategory = productCategoryDM;
+    }
+}
