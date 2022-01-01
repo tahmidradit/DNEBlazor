@@ -34,3 +34,15 @@ G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\ref\DNEBlazor.Data.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.pdb
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Data\bin\Debug\net6.0\DNEBlazor.Data.deps.json
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Data\bin\Debug\net6.0\DNEBlazor.Data.dll
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Data\bin\Debug\net6.0\ref\DNEBlazor.Data.dll
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Data\bin\Debug\net6.0\DNEBlazor.Data.pdb
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.csproj.AssemblyReference.cache
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.AssemblyInfoInputs.cache
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.AssemblyInfo.cs
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.csproj.CoreCompileInputs.cache
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.dll
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\ref\DNEBlazor.Data.dll
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Data\obj\Debug\net6.0\DNEBlazor.Data.pdb

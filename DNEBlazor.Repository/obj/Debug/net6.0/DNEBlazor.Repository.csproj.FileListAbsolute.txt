@@ -43,3 +43,18 @@ G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debu
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\ref\DNEBlazor.Repository.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.pdb
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.csproj.AssemblyReference.cache
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.AssemblyInfoInputs.cache
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.AssemblyInfo.cs
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.csproj.CoreCompileInputs.cache
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.dll
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\ref\DNEBlazor.Repository.dll
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.pdb
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Repository.deps.json
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Repository.dll
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\ref\DNEBlazor.Repository.dll
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Repository.pdb
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Data.dll
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\bin\Debug\net6.0\DNEBlazor.Data.pdb
+F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor.Repository\obj\Debug\net6.0\DNEBlazor.Repository.csproj.CopyComplete

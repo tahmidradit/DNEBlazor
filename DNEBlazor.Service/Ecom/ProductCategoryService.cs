@@ -1,6 +1,8 @@
 ﻿using DNEBlazor.Data.Models;
+using DNEBlazor.Data.Models.Ecom;
 using DNEBlazor.Repository.Data;
-using DNEBlazor.Repository.Ecom.Category;
+using DNEBlazor.Repository.Ecom;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +19,7 @@ namespace DNEBlazor.Service.Ecom
         {
             this.context = context;
         }
+
         public ProductCategory Add(ProductCategory productCategory)
         {
             context.ProductCategories.Add(productCategory);
@@ -49,6 +52,16 @@ namespace DNEBlazor.Service.Ecom
             context.ProductCategories.Update(productCategory);
             context.SaveChanges();
             return this.GetProductCategory(productCategory.Id);
+        }
+
+        public List<ProductCategory> RenderProductCategoriesList()
+        {
+            return context.ProductCategories.ToList();
+        }
+
+        public List<Brand> RenderBrandsList()
+        {
+            return context.Brands.Include(m => m.ProductCategory).ToList();
         }
     }
 }

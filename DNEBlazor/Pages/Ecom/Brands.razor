@@ -1,7 +1,9 @@
 ﻿@page "/brands"
 @using DNEBlazor.Data.Models;
+@using DNEBlazor.Data.Models.Ecom
 @using DNEBlazor.Repository.Data;
-@inherits OwningComponentBase<ProductCategory>
+@using DNEBlazor.Service.Ecom
+@inherits OwningComponentBase<ProductCategoryService>
 @inject DNEBlazor.Repository.Ecom.IBrand iBrand;
 
 <center>
@@ -17,7 +19,7 @@
                     <label class="text-secondary">Name</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@brand.Name" /> <br />
                     <label class="text-secondary">Category</label>
-                    <select class="form-select mt-2" @bind="@brand.ProductCategoryId">@foreach (var items in bra) { <option value="@items.Id">@items.Name</option> } </select> <br />                    
+                    <select class="form-select mt-2" @bind="@brand.ProductCategoryId">@foreach (var items in ProductCategories) { <option value="@items.Id">@items.Name</option> } </select> <br />                    
                     <a class="form-control btn btn-info text-white" @onclick="@(m =>Save())" style="width:15rem;"><i class="fas fa-plus"></i> &nbsp; Save</a>
                 @*</form>*@
             </div>
@@ -60,6 +62,7 @@
     protected override void OnInitialized()
     {
         LoadBrands();
+        ProductCategories = Service.RenderProductCategoriesList();
     }
 
     private void LoadBrands()

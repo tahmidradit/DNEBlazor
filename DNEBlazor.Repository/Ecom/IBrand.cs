@@ -1,4 +1,5 @@
 ﻿using DNEBlazor.Data.Models;
+using DNEBlazor.Data.Models.Ecom;
 using System;
 using System.Collections.Generic;
 using System.Linq;

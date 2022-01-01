@@ -3,7 +3,6 @@ using DNEBlazor.Data;
 using DNEBlazor.Repository;
 using DNEBlazor.Repository.Data;
 using DNEBlazor.Repository.Ecom;
-using DNEBlazor.Repository.Ecom.Category;
 using DNEBlazor.Service;
 using DNEBlazor.Service.Ecom;
 using Microsoft.AspNetCore.Builder;
@@ -35,8 +34,9 @@ builder.Services.AddScoped<ICategory, CategoryService>();
 builder.Services.AddScoped<ILead, LeadService>();
 builder.Services.AddScoped<IProductCategory, ProductCategoryService>();
 builder.Services.AddScoped<IBrand, BrandService>();
+builder.Services.AddScoped<IProductEcom, ProductEcomServices>();
 builder.Services.AddScoped<LeadService>();
-builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<ProductCategoryService>();
 
 var app = builder.Build();
 

@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Ecom\CurrentProducts.razor" />
     <Content Remove="Pages\LeadComponent.razor" />
   </ItemGroup>
 
@@ -24,6 +25,18 @@
   <ItemGroup>
     <ProjectReference Include="..\DNEBlazor.Repository\DNEBlazor.Repository.csproj" />
     <ProjectReference Include="..\DNEBlazor.Service\DNEBlazor.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Ecom\CurrentProducts.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Ecom\CurrentProducts.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Ecom\CurrentProducts.razor" />
   </ItemGroup>
 
   
