@@ -2082,3 +2082,4 @@ F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor\obj\Debug\net6.0\DNEBlazor.dll
 F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor\obj\Debug\net6.0\ref\DNEBlazor.dll
 F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor\obj\Debug\net6.0\DNEBlazor.pdb
 F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor\obj\Debug\net6.0\DNEBlazor.genruntimeconfig.cache
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\BlazorInputFile.dll

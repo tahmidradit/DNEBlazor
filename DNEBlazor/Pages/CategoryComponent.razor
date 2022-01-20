@@ -71,17 +71,20 @@
 
     Category category = new Category();
     List<Category> Categories = new List<Category>();
-
-    public string UserName;
+    [Inject]
+    protected AuthenticationStateProvider authenticationStateProvider { get; set; }
     
-    protected override void OnInitialized()
+    
+    protected override async Task OnInitializedAsync()
     {
         LoadCategories();
-        UserName = httpContextAccessor.HttpContext.User.Identity.Name;
+        var authenticationStateProviderAsync = await authenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authenticationStateProviderAsync.User.Claims;
+
         category = new Category()
         {
-            CreatedByUserId = UserName,
-            UpdatedByUserId = UserName,  
+            CreatedByUserId = user.FirstOrDefault().Value,
+            UpdatedByUserId = user.FirstOrDefault().Value  
         };
     }
 

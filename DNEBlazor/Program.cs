@@ -37,6 +37,7 @@ builder.Services.AddScoped<IBrand, BrandService>();
 builder.Services.AddScoped<IProductEcom, ProductEcomServices>();
 builder.Services.AddScoped<LeadService>();
 builder.Services.AddScoped<ProductCategoryService>();
+builder.Services.AddScoped<ProductEcomServices>();
 
 var app = builder.Build();
 

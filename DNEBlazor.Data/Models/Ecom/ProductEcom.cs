@@ -20,11 +20,12 @@ namespace DNEBlazor.Data.Models.Ecom
         public string Price { get; set; }
         public ProductCategory ProductCategory { get; set; }
 
-        [ForeignKey("ProductCategoryId")]
+        [ForeignKey("ProductCategoryId"), Display(Name = "Category")]
         public int ProductCategoryId { get; set; }
         public Brand Brand { get; set; }
 
-        [ForeignKey("BrandId")]
+        [ForeignKey("BrandId"), Display(Name = "Brand")]
         public int BrandId { get; set; }
+        public string Picture { get; set; }
     }
 }

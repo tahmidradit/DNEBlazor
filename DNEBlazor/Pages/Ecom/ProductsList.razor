@@ -1,27 +1,36 @@
 ﻿@page "/currentproducts"
 
+@using BlazorInputFile;
 @using DNEBlazor.Data.Models.Ecom;
 @using DNEBlazor.Repository.Data;
 @using DNEBlazor.Service.Ecom;
+@using Microsoft.AspNetCore.Http;
+@using System.IO;
+
 @inherits OwningComponentBase<ProductCategoryService>
 @inject DNEBlazor.Repository.Ecom.IProductEcom iProductEcom;
+
 
 <div class="row">
     <div class="col-4">
         <div class="card text-white mb-3" style="max-width: 18rem;">
             <div class="card-header bg-info">Save Products</div>
             <div class="card-body">
-                @*<form>*@ @*// do not use form tag to stop page reloading//*@
+                <form method="post" enctype="multipart/form-data"> @*// do not use form tag to stop page reloading//*@
                     <label class="text-secondary">Name</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@productEcom.Name" /> <br />
                     <label class="text-secondary">Price</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@productEcom.Price" /> <br />
                     <label class="text-secondary">Category</label>
-                    <select class="form-select mt-2" @bind="@productEcom.ProductCategoryId">@foreach (var items in ProductCategories) { <option value="@items.Id">@items.Name</option> } </select> <br />
+                    <select class="form-select mt-2" @bind="@productEcom.ProductCategoryId">@foreach (var item in ProductCategoriesList) { <option value="@item.Id">@item.Name</option> } </select> <br />
                     <label class="text-secondary">Brand</label>
-                    <select class="form-select mt-2" @bind="@productEcom.BrandId">@foreach (var items in Brands.Where(m=>m.ProductCategoryId == productEcom.ProductCategoryId)) { <option value="@items.Id">@items.Name</option> } </select> <br />
+                    <select class="form-select mt-2" @bind="@productEcom.BrandId">@foreach (var items in BrandsList) { <option value="@items.Id">@items.Name</option> } </select> <br />
+                    <label class="text-secondary">Image</label>
+
+                    <input type="file" name="file" class="form-control p-1" multiple /> <br />
                     <a class="form-control btn btn-info text-white" @onclick="@(m =>Save())" style="width:15rem;"><i class="fas fa-plus"></i> &nbsp; Save</a>
-                @*</form>*@
+                </form>
+                
             </div>
         </div>
     </div>
@@ -32,8 +41,9 @@
                     <th>Id</th>
                     <th>Name</th>
                     <th>Price</th>
-                    <th>CategoryId</th>
-                    <th>BrandId</th>
+                    <th>Category</th>
+                    <th>Brand</th>
+                    <th>Image</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -46,6 +56,7 @@
                         <td>@productEcom.Price</td>
                         <td>@productEcom.ProductCategory.Name</td>
                         <td>@productEcom.Brand.Name</td>
+                        <td>@productEcom.Picture</td>
                         <td>
                             <a class="btn btn-dark text-white btn-sm" @onclick="@(m=>PreloadInputFields(@productEcom))"><i class="fas fa-edit"></i> &nbsp; Edit</a>
                             <a class="btn btn-danger text-white btn-sm" @onclick="@(m=>Remove(@productEcom.Id))"><i class="fas fa-trash-alt"></i> &nbsp; Delete</a>
@@ -60,18 +71,37 @@
 @code {
 
     ProductEcom productEcom = new ProductEcom();
-    ProductCategory productCategory = new ProductCategory();
+    ProductCategory productCategories { get; set; }
     List<ProductEcom> productsEcom = new List<ProductEcom>();
-    List<ProductCategory> ProductCategories { get; set; }
-    List<Brand> Brands { get; set; }
-
+    IEnumerable<ProductCategory> ProductCategoriesList { get; set; }
+    IEnumerable<Brand> BrandsList { get; set; }
+    Image image = new Image();
+    public byte[] ImageByte { get; set; }
+    IFileListEntry file;
+    int Id;
     protected override void OnInitialized()
     {
         LoadProducts();
-        ProductCategories = Service.RenderProductCategoriesList();
-        Brands = Service.RenderBrandsList();
+        //ProductCategories = Service.RenderProductCategoriesList();
+        //Brands = Service.RenderBrandsList();
+        ProductCategoriesList = Service.RenderProductCategoriesList();
+        BrandsList = Service.RenderBrandsList();
     }
 
+    void ValidSubmit()
+    {
+        //productEcom.Picture = ImageByte;
+        Service.UploadImage(productEcom);
+    }
+
+    //async Task OpenFileDialog()
+    //{
+    //    file = fileListEntry.FirstOrDefault();
+    //    if(file != null)
+    //    {
+    //        await iProductEcom.UploadImages(file);
+    //    }
+    //}
     private void LoadProducts()
     {
         productsEcom = new List<ProductEcom>();
@@ -85,9 +115,10 @@
 
     private void Save()
     {
+        
         if (productEcom.Id == 0)
         {
-            productEcom = iProductEcom.Add(productEcom);
+            productEcom = iProductEcom.Add(productEcom, file, Id);
         }
         else
         {
@@ -96,11 +127,13 @@
 
         productEcom = new ProductEcom();
         LoadProducts();
-
     }
 
     private void PreloadInputFields(ProductEcom productEcomDM)
     {
         productEcom = productEcomDM;
     }
+
+    
 }
+

@@ -88,16 +88,18 @@
     Lead lead = new Lead();
     List<Lead> Leads = new List<Lead>();
     IEnumerable<Category> Categories { get; set; }
-    public string UserName;
+    [Inject]
+    protected AuthenticationStateProvider authenticationStateProvider { get; set; }
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
         LoadLeads();
-        UserName = httpContextAccessor.HttpContext.User.Identity.Name;
+        var authenticationStateProviderAsync = await authenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authenticationStateProviderAsync.User.Claims;
         lead = new Lead()
         {
-            CreatedByUserId = UserName,
-            UpdatedByUserId = UserName,  
+            CreatedByUserId = user.FirstOrDefault().Value,
+            UpdatedByUserId = user.FirstOrDefault().Value,  
         };
         Categories = Service.RenderCategoriesList();
     }

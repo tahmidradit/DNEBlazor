@@ -1,11 +1,40 @@
 ﻿@page "/"
-
+@using DNEBlazor.Data.Models.Ecom
+@using DNEBlazor.Service.Ecom
+@inherits OwningComponentBase<ProductCategoryService>
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+@*<h1>Hello, world!</h1>
 
 Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<SurveyPrompt Title="How is Blazor working for you?" />*@
+@foreach(var category in ProductCategories)
+{
+    <h4 class="m-2">@category.Name</h4> <br />
+    <div class="row m-2">
+        @foreach(var items in Products.Where(m => m.ProductCategoryId == category.Id))
+         {
+            <div class="card m-2" style="width: 16rem;">
+                <img src="../images/defaultProductImage.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@items.Name</h5>
+                    <p class="card-text">@items.Name</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        }
+   </div>
+}
 
+@code {
+    IEnumerable<ProductEcom> Products { get; set; }
+    IEnumerable<ProductCategory> ProductCategories { get; set; }
+    ProductEcom productEcom = new ProductEcom();
 
+    protected override void OnInitialized()
+    {
+        Products = Service.RenderProducts();
+        ProductCategories = Service.RenderProductCategoriesList();
+    }
+}
