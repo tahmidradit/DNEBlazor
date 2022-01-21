@@ -1,11 +1,10 @@
 ﻿@page "/categorycomponent"
 @using DNEBlazor.Data.Models;
 @using DNEBlazor.Repository.Data;
+@using DNEBlazor.Service
 @using Microsoft.AspNetCore.Http;
 @using Microsoft.AspNetCore.Identity;
-
 @inject IHttpContextAccessor httpContextAccessor;
-
 @inject DNEBlazor.Repository.ICategory iCategory;
 
 <center>
@@ -20,10 +19,10 @@
                 @*<form>*@ @*// do not use form tag to stop page reloading//*@
                     <label class="text-secondary">Name</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@category.Name" /> <br />
-                    <label class="text-secondary">Created By</label>
-                    <input type="text" class="form-control" style="width:15rem;" @bind="@category.CreatedByUserId" /> <br />
-                    <label class="text-secondary">Updated By</label>
-                    <input type="text" class="form-control" style="width:15rem;" @bind="@category.UpdatedByUserId" /> <br />
+                    @*<label class="text-secondary">Created By</label>*@
+                    @*<input type="hidden" class="form-control" style="width:15rem;" @bind="@category.CreatedByUserId" />*@
+                    @*<label class="text-secondary">Updated By</label>*@
+                    @*<input type="hidden" class="form-control" style="width:15rem;" @bind="@category.UpdatedByUserId" />*@
                     <label class="text-secondary">Date Created</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@category.DateCreated" /> <br />
                     <label class="text-secondary">Date Updated</label>
@@ -69,11 +68,10 @@
 
 @code {
 
-    Category category = new Category();
-    List<Category> Categories = new List<Category>();
     [Inject]
     protected AuthenticationStateProvider authenticationStateProvider { get; set; }
-    
+    Category category = new Category();
+    List<Category> Categories = new List<Category>();
     
     protected override async Task OnInitializedAsync()
     {
@@ -86,13 +84,13 @@
             CreatedByUserId = user.FirstOrDefault().Value,
             UpdatedByUserId = user.FirstOrDefault().Value  
         };
+       
     }
 
     private void LoadCategories()
     {
         Categories = new List<Category>();
         Categories = iCategory.ToListCategories();
-        
     }
 
     private void Remove(int Id)
@@ -100,7 +98,7 @@
         string delete = iCategory.Delete(Id);
     }
 
-    private void Save()
+    public void Save()
     {
         if (category.Id == 0)
         {
@@ -120,9 +118,4 @@
     {
         category = categoryDM;
     }
-
-    //Category PreloadInputField()
-    //{
-    //    return category = iCategory.PreloadData();
-    //}
 }

@@ -27,11 +27,11 @@
                     <label class="text-secondary">Phone</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@lead.Phone" /> <br />
                     <label class="text-secondary">Category</label>
-                    <select class="form-select mt-2" @bind="@lead.CategoryId">@foreach(var items in Categories) { <option value="@items.Id">@items.Name</option> }</select>
-                    <label class="text-secondary">Created By</label>
+                    <select class="form-select mt-2" @bind="@lead.CategoryId">@foreach(var items in Categories) { <option value="@items.Id">@items.Name</option> } </select>
+                    @*<label class="text-secondary">Created By</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@lead.CreatedByUserId" /> <br />
                     <label class="text-secondary">Updated By</label>
-                    <input type="text" class="form-control" style="width:15rem;" @bind="@lead.UpdatedByUserId" /> <br />
+                    <input type="text" class="form-control" style="width:15rem;" @bind="@lead.UpdatedByUserId" /> <br />*@
                     <label class="text-secondary">Date Created</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@lead.DateCreated" /> <br />
                     <label class="text-secondary">Date Updated</label>
@@ -85,12 +85,12 @@
 
 @code {
 
+    [Inject]
+    protected AuthenticationStateProvider authenticationStateProvider { get; set; }
     Lead lead = new Lead();
     List<Lead> Leads = new List<Lead>();
     IEnumerable<Category> Categories { get; set; }
-    [Inject]
-    protected AuthenticationStateProvider authenticationStateProvider { get; set; }
-
+    
     protected override async Task OnInitializedAsync()
     {
         LoadLeads();

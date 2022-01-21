@@ -1,8 +1,10 @@
 ﻿using DNEBlazor.Data.Models;
 using DNEBlazor.Repository;
 using DNEBlazor.Repository.Data;
+using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +17,10 @@ namespace DNEBlazor.Service
     public class CategoryService : ICategory
     {
         private readonly ApplicationDbContext context;
+
+        [Inject]
+        protected AuthenticationStateProvider authenticationStateProvider { get; set; }
+
         public CategoryService(ApplicationDbContext context)
         {
             this.context = context;
@@ -22,6 +28,7 @@ namespace DNEBlazor.Service
 
         public Category Add(Category Category)
         {
+           
             context.Categories.Add(Category);
             context.SaveChanges();
             return this.GetCategory(Category.Id);
@@ -53,5 +60,20 @@ namespace DNEBlazor.Service
             context.SaveChanges();
             return this.GetCategory(Category.Id);
         }
+
+        
+        //public async Task InsertUserIds()
+        //{
+        //    //var authenticationStateProviderAsync = await authenticationStateProvider.GetAuthenticationStateAsync();
+        //    var user = (await authenticationStateProvider.GetAuthenticationStateAsync()).User.Claims;
+        //    var cat = new Category()
+        //    {
+        //        CreatedByUserId = user.FirstOrDefault().Value,
+        //        UpdatedByUserId = user.FirstOrDefault().Value
+        //    };
+            
+        //    await context.Categories.AddAsync(cat);
+        //    await context.SaveChangesAsync();
+        //}
     }
 }
