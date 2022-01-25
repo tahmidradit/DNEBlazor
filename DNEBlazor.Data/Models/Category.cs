@@ -18,9 +18,9 @@ namespace DNEBlazor.Data.Models
         public string UpdatedByUserId { get; set; }
 
         [Display(Name = "Date Created")]
-        public DateTime DateCreated { get; set; } = DateTime.Now;
+        public DateTime DateCreated { get; set; } 
 
         [Display(Name = "Date Updated")]
-        public DateTime DateUpdated { get; set; } = DateTime.Now;
+        public DateTime DateUpdated { get; set; } 
     }
 }

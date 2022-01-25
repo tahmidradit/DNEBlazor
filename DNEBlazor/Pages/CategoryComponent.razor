@@ -1,10 +1,11 @@
 ﻿@page "/categorycomponent"
+@attribute [Authorize]
 @using DNEBlazor.Data.Models;
 @using DNEBlazor.Repository.Data;
 @using DNEBlazor.Service
 @using Microsoft.AspNetCore.Http;
 @using Microsoft.AspNetCore.Identity;
-@inject IHttpContextAccessor httpContextAccessor;
+
 @inject DNEBlazor.Repository.ICategory iCategory;
 
 <center>
@@ -23,10 +24,10 @@
                     @*<input type="hidden" class="form-control" style="width:15rem;" @bind="@category.CreatedByUserId" />*@
                     @*<label class="text-secondary">Updated By</label>*@
                     @*<input type="hidden" class="form-control" style="width:15rem;" @bind="@category.UpdatedByUserId" />*@
-                    <label class="text-secondary">Date Created</label>
+                    @*<label class="text-secondary">Date Created</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@category.DateCreated" /> <br />
                     <label class="text-secondary">Date Updated</label>
-                    <input type="text" class="form-control" style="width:15rem;" @bind="@category.DateUpdated" /> <br />
+                    <input type="text" class="form-control" style="width:15rem;" @bind="@category.DateUpdated" /> <br />*@
                     <a class="form-control btn btn-info text-white" @onclick="@(m =>Save())" style="width:15rem;"><i class="fas fa-plus"></i> &nbsp; Save</a>
                 @*</form>*@
             </div>
@@ -69,10 +70,10 @@
 @code {
 
     [Inject]
-    protected AuthenticationStateProvider authenticationStateProvider { get; set; }
+    protected AuthenticationStateProvider authenticationStateProvider { get; set; }  
     Category category = new Category();
     List<Category> Categories = new List<Category>();
-    
+
     protected override async Task OnInitializedAsync()
     {
         LoadCategories();
@@ -82,9 +83,11 @@
         category = new Category()
         {
             CreatedByUserId = user.FirstOrDefault().Value,
-            UpdatedByUserId = user.FirstOrDefault().Value  
+            UpdatedByUserId = user.FirstOrDefault().Value,
+            DateCreated = DateTime.Now,
+            DateUpdated = DateTime.Now
         };
-       
+
     }
 
     private void LoadCategories()
@@ -98,20 +101,19 @@
         string delete = iCategory.Delete(Id);
     }
 
-    public void Save()
-    {
+    public async Task Save()
+    { 
         if (category.Id == 0)
         {
             category = iCategory.Add(category);
         }
         else
         {
-            category = iCategory.Update(category);
+            category = await iCategory.Update(category, authenticationStateProvider);
         }
 
         category = new Category();
         LoadCategories();
-
     }
 
     private void PreloadInputFields(Category categoryDM)

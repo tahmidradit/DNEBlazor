@@ -1,6 +1,7 @@
 ﻿using DNEBlazor.Data.Models;
 using DNEBlazor.Repository;
 using DNEBlazor.Repository.Data;
+using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -45,10 +46,21 @@ namespace DNEBlazor.Service
             return leads;
         }
 
-        public Lead Update(Lead lead)
+        public async Task<Lead> Update(Lead lead, AuthenticationStateProvider authenticationStateProviderInjected)
         {
-            context.Leads.Update(lead);
-            context.SaveChanges();
+            var authenticationStateProviderAsync = await authenticationStateProviderInjected.GetAuthenticationStateAsync();
+            var user = authenticationStateProviderAsync.User.Claims;
+            var findById = await context.Leads.Include(m => m.Category).FirstOrDefaultAsync(m => m.Id == lead.Id);
+            findById.FirstName = lead.FirstName;
+            findById.LastName = lead.LastName;
+            findById.Email = lead.Email;
+            findById.Phone = lead.Phone;
+            findById.CategoryId = lead.CategoryId;
+            findById.CreatedByUserId = user.FirstOrDefault().Value;
+            findById.UpdatedByUserId = user.FirstOrDefault().Value;
+            findById.DateCreated = lead.DateCreated;
+            findById.DateUpdated = lead.DateUpdated;
+            await context.SaveChangesAsync();
             return this.GetLead(lead.Id);
         }
 

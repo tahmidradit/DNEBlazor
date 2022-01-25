@@ -4,7 +4,6 @@
 @using DNEBlazor.Service;
 @using Microsoft.AspNetCore.Http;
 @using Microsoft.AspNetCore.Identity;
-@inject IHttpContextAccessor httpContextAccessor;
 @inject DNEBlazor.Repository.ILead iLead;
 @inherits OwningComponentBase<LeadService>
 
@@ -27,16 +26,16 @@
                     <label class="text-secondary">Phone</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@lead.Phone" /> <br />
                     <label class="text-secondary">Category</label>
-                    <select class="form-select mt-2" @bind="@lead.CategoryId">@foreach(var items in Categories) { <option value="@items.Id">@items.Name</option> } </select>
+                    <select class="form-select mt-2" style="width:15rem;" @bind="@lead.CategoryId">@foreach(var items in Categories) { <option value="@items.Id">@items.Name</option> } </select>
                     @*<label class="text-secondary">Created By</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@lead.CreatedByUserId" /> <br />
                     <label class="text-secondary">Updated By</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@lead.UpdatedByUserId" /> <br />*@
-                    <label class="text-secondary">Date Created</label>
+                    @*<label class="text-secondary">Date Created</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@lead.DateCreated" /> <br />
                     <label class="text-secondary">Date Updated</label>
-                    <input type="text" class="form-control" style="width:15rem;" @bind="@lead.DateUpdated" /> <br />
-                    <a class="form-control btn btn-info text-white" @onclick="@(m =>Save())" style="width:15rem;"><i class="fas fa-plus"></i> &nbsp; Save</a>
+                    <input type="text" class="form-control" style="width:15rem;" @bind="@lead.DateUpdated" /> <br />*@
+                    <a class="form-control btn btn-info text-white mt-2" @onclick="@(m =>Save())" style="width:15rem;"><i class="fas fa-plus"></i> &nbsp; Save</a>
                 @*</form>*@
             </div>
         </div>
@@ -73,8 +72,8 @@
                         <td>@lead.DateCreated</td>
                         <td>@lead.DateUpdated</td>
                         <td>
-                            <a class="btn btn-dark text-white btn-sm" @onclick="@(m=>PreloadInputFields(@lead))"><i class="fas fa-edit"></i> &nbsp; Edit</a>
-                            <a class="btn btn-danger text-white btn-sm" @onclick="@(m=>Remove(@lead.Id))"><i class="fas fa-trash-alt"></i> &nbsp; Delete</a>
+                            <a class="btn btn-dark text-white btn-sm" @onclick="@(m=>PreloadInputFields(@lead))"><i class="fas fa-edit"></i></a>
+                            <a class="btn btn-danger text-white btn-sm" @onclick="@(m=>Remove(@lead.Id))"><i class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>
                 }
@@ -99,7 +98,9 @@
         lead = new Lead()
         {
             CreatedByUserId = user.FirstOrDefault().Value,
-            UpdatedByUserId = user.FirstOrDefault().Value,  
+            UpdatedByUserId = user.FirstOrDefault().Value,
+            DateCreated = DateTime.Now,
+            DateUpdated = DateTime.Now
         };
         Categories = Service.RenderCategoriesList();
     }
@@ -115,7 +116,7 @@
         string delete = iLead.Delete(Id);
     }
 
-    private void Save()
+    public async Task Save()
     {
         if (lead.Id == 0)
         {
@@ -123,7 +124,7 @@
         }
         else
         {
-            lead = iLead.Update(lead);
+            lead = await iLead.Update(lead, authenticationStateProvider);
         }
 
         lead = new Lead();

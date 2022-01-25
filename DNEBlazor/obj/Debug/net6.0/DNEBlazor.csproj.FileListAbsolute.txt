@@ -969,10 +969,7 @@ G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\re
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authentication.Core.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authentication.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
-G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authorization.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authorization.Policy.dll
-G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Components.Authorization.dll
-G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Components.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Components.Forms.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Components.Server.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Components.Web.dll
@@ -1004,7 +1001,6 @@ G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\re
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Identity.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Localization.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Localization.Routing.dll
-G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Metadata.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.Core.dll
@@ -2083,3 +2079,7 @@ F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor\obj\Debug\net6.0\ref\DNEBlazor.dll
 F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor\obj\Debug\net6.0\DNEBlazor.pdb
 F:\Projects\.NET\GitRepo\DNEBlazor\DNEBlazor\obj\Debug\net6.0\DNEBlazor.genruntimeconfig.cache
 G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\BlazorInputFile.dll
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
+G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll

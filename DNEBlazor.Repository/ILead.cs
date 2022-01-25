@@ -1,4 +1,5 @@
 ﻿using DNEBlazor.Data.Models;
+using Microsoft.AspNetCore.Components.Authorization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace DNEBlazor.Repository
     public interface ILead
     {
         public Lead Add(Lead lead);
-        public Lead Update(Lead lead);
+        public Task<Lead> Update(Lead lead, AuthenticationStateProvider authenticationStateProviderInjected);
         public string Delete(int Id);
         public Lead GetLead(int Id);
         public List<Lead> ToListLeads();

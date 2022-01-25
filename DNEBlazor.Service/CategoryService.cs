@@ -4,7 +4,7 @@ using DNEBlazor.Repository.Data;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Http;
-
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +16,9 @@ namespace DNEBlazor.Service
 {
     public class CategoryService : ICategory
     {
-        private readonly ApplicationDbContext context;
-
         [Inject]
-        protected AuthenticationStateProvider authenticationStateProvider { get; set; }
+        public NavigationManager UrlNavigationManager { get; set; }
+        private readonly ApplicationDbContext context;
 
         public CategoryService(ApplicationDbContext context)
         {
@@ -28,7 +27,7 @@ namespace DNEBlazor.Service
 
         public Category Add(Category Category)
         {
-           
+
             context.Categories.Add(Category);
             context.SaveChanges();
             return this.GetCategory(Category.Id);
@@ -38,8 +37,8 @@ namespace DNEBlazor.Service
         {
             var findById = context.Categories.FirstOrDefault(m => m.Id == Id);
             context.Categories.Remove(findById);
-            context.SaveChanges();
-            return "Deleted";
+            context.SaveChanges();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+            return "Deleted";    
         }
 
         public Category GetCategory(int Id)
@@ -54,26 +53,18 @@ namespace DNEBlazor.Service
             return categories;
         }
 
-        public Category Update(Category Category)
+        public async Task<Category> Update(Category Category, AuthenticationStateProvider authenticationStateProviderInjected)
         {
-            context.Categories.Update(Category);
-            context.SaveChanges();
+            var authenticationStateProviderAsync = await authenticationStateProviderInjected.GetAuthenticationStateAsync();
+            var user = authenticationStateProviderAsync.User.Claims;
+            var findById = await context.Categories.FirstOrDefaultAsync(m => m.Id == Category.Id);
+            findById.Name = Category.Name;
+            findById.UpdatedByUserId = user.FirstOrDefault().Value;
+            findById.CreatedByUserId = user.FirstOrDefault().Value;
+            findById.DateUpdated = Category.DateUpdated;
+            findById.DateCreated = Category.DateCreated;
+            await context.SaveChangesAsync();
             return this.GetCategory(Category.Id);
         }
-
-        
-        //public async Task InsertUserIds()
-        //{
-        //    //var authenticationStateProviderAsync = await authenticationStateProvider.GetAuthenticationStateAsync();
-        //    var user = (await authenticationStateProvider.GetAuthenticationStateAsync()).User.Claims;
-        //    var cat = new Category()
-        //    {
-        //        CreatedByUserId = user.FirstOrDefault().Value,
-        //        UpdatedByUserId = user.FirstOrDefault().Value
-        //    };
-            
-        //    await context.Categories.AddAsync(cat);
-        //    await context.SaveChangesAsync();
-        //}
     }
 }
