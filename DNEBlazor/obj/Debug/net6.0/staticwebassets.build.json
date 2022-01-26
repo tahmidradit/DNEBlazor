@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vkmw5rnLI3xQXzE00z44e8mG8v1y4bMqBsH+hCH//Sc=",
+  "Hash": "g0UGEMQoiPea7wWZQ4NqjoRk3EQKkuLrpr08aP/BZt0=",
   "Source": "DNEBlazor",
   "BasePath": "_content/DNEBlazor",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "DNEBlazor\\wwwroot",
       "Source": "DNEBlazor",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "Pattern": "**"
     }
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "C:\\Users\\TAHMID RADIT\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.1\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DNEBlazor.styles.css",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DNEBlazor.styles.css",
       "SourceId": "DNEBlazor",
       "SourceType": "Computed",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "DNEBlazor.styles.css",
       "AssetKind": "All",
@@ -1068,13 +1068,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DNEBlazor.styles.css"
+      "OriginalItemSpec": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DNEBlazor.styles.css"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DNEBlazor.bundle.scp.css",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DNEBlazor.bundle.scp.css",
       "SourceId": "DNEBlazor",
       "SourceType": "Computed",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "DNEBlazor.bundle.scp.css",
       "AssetKind": "All",
@@ -1085,13 +1085,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DNEBlazor.bundle.scp.css"
+      "OriginalItemSpec": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DNEBlazor.bundle.scp.css"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\site.css",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\css\\site.css",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\favicon.ico",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\favicon.ico",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\images\\defaultProductImage.jpg",
+      "Identity": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\images\\defaultProductImage.jpg",
       "SourceId": "DNEBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
+      "ContentRoot": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor\\wwwroot\\",
       "BasePath": "_content/DNEBlazor",
       "RelativePath": "images/defaultProductImage.jpg",
       "AssetKind": "All",

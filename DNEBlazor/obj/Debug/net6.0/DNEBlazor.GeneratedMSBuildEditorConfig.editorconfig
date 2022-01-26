@@ -8,137 +8,137 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DNEBlazor
 build_property.RootNamespace = DNEBlazor
-build_property.ProjectDir = G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor\
+build_property.ProjectDir = G:\Projects\.NET C#\Web Application\GitRepo\DNEBlazor\DNEBlazor\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = G:\Projects\.NET\Web Application\GitRepo\DNEBlazor\DNEBlazor
+build_property.MSBuildProjectDirectory = G:\Projects\.NET C#\Web Application\GitRepo\DNEBlazor\DNEBlazor
 build_property._RazorSourceGeneratorDebug = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/App.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/CategoryComponent.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/CategoryComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/Counter.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/Ecom/Brands.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/Ecom/Brands.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWNvbVxCcmFuZHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/Ecom/ProductCategoriesView.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/Ecom/ProductCategoriesView.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWNvbVxQcm9kdWN0Q2F0ZWdvcmllc1ZpZXcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/Ecom/ProductsList.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/Ecom/ProductsList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWNvbVxQcm9kdWN0c0xpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/FetchData.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/Index.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/LeadsViewPage.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/LeadsViewPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhZHNWaWV3UGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/ProductComponent.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/ProductComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Shared/LoginDisplay.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Shared/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Shared/SurveyPrompt.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/_Imports.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Shared/MainLayout.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-lhcnvulz7x
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Shared/NavMenu.razor]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-6mlm3t74cd
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/Login.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/LogOut.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/LogOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/Register.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Shared/_LoginPartial.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/_ViewImports.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/_ViewStart.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/Error.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/_Host.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/_Layout.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/_LoginPartial.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xvZ2luUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/_ViewImports.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Projects/.NET/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/_ViewStart.cshtml]
+[G:/Projects/.NET C\#/Web Application/GitRepo/DNEBlazor/DNEBlazor/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -3422,11 +3422,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Service\\DNEBlazor.Service.csproj",
+      "projectUniqueName": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Service\\DNEBlazor.Service.csproj",
       "projectName": "DNEBlazor.Service",
-      "projectPath": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Service\\DNEBlazor.Service.csproj",
+      "projectPath": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Service\\DNEBlazor.Service.csproj",
       "packagesPath": "C:\\Users\\TAHMID RADIT\\.nuget\\packages\\",
-      "outputPath": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Service\\obj\\",
+      "outputPath": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3447,11 +3447,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
-              "projectPath": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj"
+            "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
+              "projectPath": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj"
             },
-            "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {
-              "projectPath": "G:\\Projects\\.NET\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj"
+            "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {
+              "projectPath": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj"
             }
           }
         }
