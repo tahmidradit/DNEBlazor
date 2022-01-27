@@ -1,16 +1,26 @@
 ﻿@page "/leadsview"
+@attribute [Authorize]
 @using DNEBlazor.Data.Models;
 @using DNEBlazor.Repository.Data;
 @using DNEBlazor.Service;
 @using Microsoft.AspNetCore.Http;
 @using Microsoft.AspNetCore.Identity;
 @inject DNEBlazor.Repository.ILead iLead;
-@inherits OwningComponentBase<LeadService>
+@inherits DNEBlazor.Pages.Leads.LeadsViewPageModel
+@*@inject DNEBlazor.Pages.Leads.LeadsViewPageModel leadsViewPageModel*@
 
 <center>
     <h3>Lead</h3> <br />
 </center>
 
+@if(LeadsList.Count() > 0)
+{
+    
+}
+else
+{
+    <DNEBlazor.Pages.Shared.NoLeadsData />
+}
 <div class="row">
     <div class="col-4">
         <div class="card text-white mb-3" style="max-width: 18rem;">
@@ -86,12 +96,16 @@
 
     [Inject]
     protected AuthenticationStateProvider authenticationStateProvider { get; set; }
+
+    [Inject]
+    protected LeadService leadService { get; set; }
     Lead lead = new Lead();
     List<Lead> Leads = new List<Lead>();
     IEnumerable<Category> Categories { get; set; }
-    
+
     protected override async Task OnInitializedAsync()
     {
+
         LoadLeads();
         var authenticationStateProviderAsync = await authenticationStateProvider.GetAuthenticationStateAsync();
         var user = authenticationStateProviderAsync.User.Claims;
@@ -102,7 +116,7 @@
             DateCreated = DateTime.Now,
             DateUpdated = DateTime.Now
         };
-        Categories = Service.RenderCategoriesList();
+        Categories = leadService.RenderCategoriesList();
     }
 
     private void LoadLeads()

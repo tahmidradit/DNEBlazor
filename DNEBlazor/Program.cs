@@ -1,5 +1,6 @@
 using DNEBlazor.Areas.Identity;
 using DNEBlazor.Data;
+using DNEBlazor.Pages.Leads;
 using DNEBlazor.Repository;
 using DNEBlazor.Repository.Data;
 using DNEBlazor.Repository.Ecom;
@@ -35,6 +36,7 @@ builder.Services.AddScoped<ILead, LeadService>();
 builder.Services.AddScoped<IProductCategory, ProductCategoryService>();
 builder.Services.AddScoped<IBrand, BrandService>();
 builder.Services.AddScoped<IProductEcom, ProductEcomServices>();
+//builder.Services.AddScoped<LeadsViewPageModel>();
 builder.Services.AddScoped<LeadService>();
 builder.Services.AddScoped<ProductCategoryService>();
 builder.Services.AddScoped<ProductEcomServices>();
