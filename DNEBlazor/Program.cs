@@ -36,7 +36,7 @@ builder.Services.AddScoped<ILead, LeadService>();
 builder.Services.AddScoped<IProductCategory, ProductCategoryService>();
 builder.Services.AddScoped<IBrand, BrandService>();
 builder.Services.AddScoped<IProductEcom, ProductEcomServices>();
-//builder.Services.AddScoped<LeadsViewPageModel>();
+builder.Services.AddScoped<LeadsViewPageModel>();
 builder.Services.AddScoped<LeadService>();
 builder.Services.AddScoped<ProductCategoryService>();
 builder.Services.AddScoped<ProductEcomServices>();

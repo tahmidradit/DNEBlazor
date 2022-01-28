@@ -13,14 +13,17 @@
     <h3>Lead</h3> <br />
 </center>
 
-@if(LeadsList.Count() > 0)
+@if(LeadsList.Count() >= 0)
 {
     
+    <p>Having data</p>
 }
 else
 {
     <DNEBlazor.Pages.Shared.NoLeadsData />
 }
+
+<!-- 
 <div class="row">
     <div class="col-4">
         <div class="card text-white mb-3" style="max-width: 18rem;">
@@ -36,14 +39,9 @@ else
                     <label class="text-secondary">Phone</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@lead.Phone" /> <br />
                     <label class="text-secondary">Category</label>
-                    <select class="form-select mt-2" style="width:15rem;" @bind="@lead.CategoryId">@foreach(var items in Categories) { <option value="@items.Id">@items.Name</option> } </select>
+                    <select class="form-select mt-2" style="width:15rem;" @bind="@lead.CategoryId">foreach(var items in Categories) { <option value="@items.Id">@items.Name</option> } </select>
                     @*<label class="text-secondary">Created By</label>
-                    <input type="text" class="form-control" style="width:15rem;" @bind="@lead.CreatedByUserId" /> <br />
-                    <label class="text-secondary">Updated By</label>
-                    <input type="text" class="form-control" style="width:15rem;" @bind="@lead.UpdatedByUserId" /> <br />*@
-                    @*<label class="text-secondary">Date Created</label>
-                    <input type="text" class="form-control" style="width:15rem;" @bind="@lead.DateCreated" /> <br />
-                    <label class="text-secondary">Date Updated</label>
+                    <input type="text" cl Updated</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@lead.DateUpdated" /> <br />*@
                     <a class="form-control btn btn-info text-white mt-2" @onclick="@(m =>Save())" style="width:15rem;"><i class="fas fa-plus"></i> &nbsp; Save</a>
                 @*</form>*@
@@ -68,7 +66,7 @@ else
                 </tr>
             </thead>
             <tbody>
-                @foreach (Lead lead in Leads)
+                foreach (Lead lead in Leads)
                 {
                     <tr>
                         <td>@lead.Id</td>
@@ -90,7 +88,7 @@ else
             </tbody>
         </table>
     </div>
-</div>
+</div>-->
 
 @code {
 

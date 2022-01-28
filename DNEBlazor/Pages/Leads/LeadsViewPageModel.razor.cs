@@ -9,7 +9,8 @@ namespace DNEBlazor.Pages.Leads
 {
     public class LeadsViewPageModel : ComponentBase
     {
-        //protected IEnumerable<Lead> LeadsEnum { get; set; }
+        //public IEnumerable<Lead> LeadsEnum { get; set; }
+        //protected List<Lead> LeadsList = new List<Lead>();
         protected List<Lead> LeadsList = new List<Lead>();
         protected IEnumerable<Category> CategoriesList { get; set; }
     }
