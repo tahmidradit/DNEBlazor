@@ -15,5 +15,6 @@ namespace DNEBlazor.Repository
         public string Delete(int Id);
         public Lead GetLead(int Id);
         public List<Lead> ToListLeads();
+        public IEnumerable<Category> RenderCategoriesList();
     }
 }

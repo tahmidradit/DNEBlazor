@@ -7,29 +7,129 @@
 @using Microsoft.AspNetCore.Identity;
 @inject DNEBlazor.Repository.ILead iLead;
 @inherits DNEBlazor.Pages.Leads.LeadsViewPageModel
-@*@inject DNEBlazor.Pages.Leads.LeadsViewPageModel leadsViewPageModel*@
 
 <center>
-    <h3>Lead</h3> <br />
+    <h3>Lead Data</h3> <br />
 </center>
 
-@if(LeadsList.Count() >= 0)
+@if (LeadsList.Count() >= 0)
 {
-    
-    <p>Having data</p>
+    <div class="widget-header">
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search unit by name"  />
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search toggle-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-right">
+                <a href="/AddLead" class="btn btn-outline-secondary" role="button"><i class="fa fa-plus"></i> New</a>
+            </div>
+        </div>
+        <hr />
+    </div>
+    <div class="widget-content widget-content-area">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover text-center table-striped mb-4">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Category</th>
+                        <th>Created By</th>
+                        <th>Updated By</th>
+                        <th>Date Created</th>
+                        <th>Date Updated</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var lead in LeadsList)
+                    {
+                        <tr>
+                            <td>@lead.Id</td>
+                            <td>@lead.FirstName</td>
+                            <td>@lead.LastName</td>
+                            <td>@lead.Email</td>
+                            <td>@lead.Phone</td>
+                            <td>@lead.Category.Name</td>
+                            <td>@lead.CreatedByUserId</td>
+                            <td>@lead.UpdatedByUserId</td>
+                            <td>@lead.DateCreated</td>
+                            <td>@lead.DateUpdated</td>
+                            <td class="text-center">
+                                <a href="/EditLead/@lead.Id" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle text-primary"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></a>
+                                @*<a href="javascript:void(0);" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#deleteModal" @onclick="(() => DeleteConfirm(item.Id))"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle text-danger"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></a>*@
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    @*<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete Department</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>Do you want to delete this Department ??</h4>
+                    <table class="table table-danger">
+                        <tr>
+                            <td>Id:</td>
+                            <td>@viewModel.Id</td>
+                        </tr>
+                        <tr>
+                            <td>Department:</td>
+                            <td>@viewModel.Name</td>
+                        </tr>
+                        <tr>
+                            <td>Created:</td>
+                            <td>@viewModel.DateCreated</td>
+                        </tr>
+                        <tr>
+                            <td>Updated:</td>
+                            <td>@viewModel.DateUpdated</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning" data-dismiss="modal"><i class="flaticon-cancel-12"></i> No</button>
+                    <button type="button" data-dismiss="modal" class="btn btn-primary" @onclick="(async () => await Delete(viewModel.Id))">YES</button>
+                </div>
+            </div>
+        </div>
+    </div>*@
 }
 else
 {
     <DNEBlazor.Pages.Shared.NoLeadsData />
 }
 
-<!-- 
+<!--
 <div class="row">
     <div class="col-4">
         <div class="card text-white mb-3" style="max-width: 18rem;">
             <div class="card-header bg-info">Save Lead</div>
             <div class="card-body">
-                @*<form>*@ @*// do not use form tag to stop page reloading//*@
+@*<form>*@ @*// do not use form tag to stop page reloading//*@
                     <label class="text-secondary">First Name</label>
                     <input type="text" class="form-control" style="width:15rem;" @bind="@lead.FirstName" /> <br />
                     <label class="text-secondary">Last Name</label>
@@ -40,11 +140,11 @@ else
                     <input type="text" class="form-control" style="width:15rem;" @bind="@lead.Phone" /> <br />
                     <label class="text-secondary">Category</label>
                     <select class="form-select mt-2" style="width:15rem;" @bind="@lead.CategoryId">foreach(var items in Categories) { <option value="@items.Id">@items.Name</option> } </select>
-                    @*<label class="text-secondary">Created By</label>
-                    <input type="text" cl Updated</label>
-                    <input type="text" class="form-control" style="width:15rem;" @bind="@lead.DateUpdated" /> <br />*@
+@*<label class="text-secondary">Created By</label>
+    <input type="text" cl Updated</label>
+    <input type="text" class="form-control" style="width:15rem;" @bind="@lead.DateUpdated" /> <br />*@
                     <a class="form-control btn btn-info text-white mt-2" @onclick="@(m =>Save())" style="width:15rem;"><i class="fas fa-plus"></i> &nbsp; Save</a>
-                @*</form>*@
+@*</form>*@
             </div>
         </div>
     </div>
@@ -89,7 +189,6 @@ else
         </table>
     </div>
 </div>-->
-
 @code {
 
     [Inject]
@@ -100,7 +199,7 @@ else
     Lead lead = new Lead();
     List<Lead> Leads = new List<Lead>();
     IEnumerable<Category> Categories { get; set; }
-
+    
     protected override async Task OnInitializedAsync()
     {
 
@@ -108,13 +207,14 @@ else
         var authenticationStateProviderAsync = await authenticationStateProvider.GetAuthenticationStateAsync();
         var user = authenticationStateProviderAsync.User.Claims;
         lead = new Lead()
-        {
-            CreatedByUserId = user.FirstOrDefault().Value,
-            UpdatedByUserId = user.FirstOrDefault().Value,
-            DateCreated = DateTime.Now,
-            DateUpdated = DateTime.Now
-        };
+            {
+                CreatedByUserId = user.FirstOrDefault().Value,
+                UpdatedByUserId = user.FirstOrDefault().Value,
+                DateCreated = DateTime.Now,
+                DateUpdated = DateTime.Now
+            };
         Categories = leadService.RenderCategoriesList();
+        
     }
 
     private void LoadLeads()

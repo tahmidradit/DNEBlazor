@@ -3787,6 +3787,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.AspNetCore.Hosting": "2.2.7",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.1",
           "Microsoft.Extensions.Hosting": "6.0.0"
         },
         "compile": {
@@ -3806,6 +3807,7 @@
           "Microsoft.AspNetCore.Hosting": "2.2.7",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.1",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.1",
           "Microsoft.Extensions.Hosting": "6.0.0"
         },
@@ -3822,7 +3824,8 @@
         "dependencies": {
           "BlazorInputFile": "0.2.0",
           "DNEBlazor.Data": "1.0.0",
-          "DNEBlazor.Repository": "1.0.0"
+          "DNEBlazor.Repository": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.1"
         },
         "compile": {
           "bin/placeholder/DNEBlazor.Service.dll": {}
