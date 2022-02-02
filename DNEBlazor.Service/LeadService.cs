@@ -23,7 +23,7 @@ namespace DNEBlazor.Service
         {
             context.Leads.Add(lead);
             context.SaveChanges();
-            return this.GetLead(lead.Id);
+            return lead;
         }
 
         public string Delete(int Id)
@@ -34,9 +34,9 @@ namespace DNEBlazor.Service
             return "Deleted";
         }
 
-        public Lead GetLead(int Id)
+        public async Task<Lead> GetLead(int Id)
         {
-            var findById = context.Leads.FirstOrDefault(m => m.Id == Id);
+            var findById = await context.Leads.FirstOrDefaultAsync(m => m.Id == Id);
             return findById;
         }
 
@@ -61,10 +61,10 @@ namespace DNEBlazor.Service
             findById.DateCreated = lead.DateCreated;
             findById.DateUpdated = lead.DateUpdated;
             await context.SaveChangesAsync();
-            return this.GetLead(lead.Id);
+            return lead;
         }
 
-        public IEnumerable<Category> RenderCategoriesList()
+        public List<Category> RenderCategoriesList()
         {
             return context.Categories.ToList();
         }

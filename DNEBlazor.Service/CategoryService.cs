@@ -19,10 +19,12 @@ namespace DNEBlazor.Service
         [Inject]
         public NavigationManager UrlNavigationManager { get; set; }
         private readonly ApplicationDbContext context;
+        private readonly AppDbContext dbContext;
 
-        public CategoryService(ApplicationDbContext context)
+        public CategoryService(ApplicationDbContext context, AppDbContext dbContext)
         {
             this.context = context;
+            this.dbContext = dbContext;
         }
 
         public Category Add(Category Category)
@@ -43,13 +45,13 @@ namespace DNEBlazor.Service
 
         public Category GetCategory(int Id)
         {
-            var findById = context.Categories.FirstOrDefault(m => m.Id == Id);
+            var findById = dbContext.Categories.FirstOrDefault(m => m.Id == Id);
             return findById;
         }
 
         public List<Category> ToListCategories()
         {
-            var categories = context.Categories.ToList();
+            var categories = dbContext.Categories.ToList();
             return categories;
         }
 

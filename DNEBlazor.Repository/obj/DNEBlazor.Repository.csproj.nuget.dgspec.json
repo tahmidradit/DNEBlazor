@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {}
+    "D:\\Projects\\.NET\\Web\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {}
   },
   "projects": {
-    "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
+    "D:\\Projects\\.NET\\Web\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj",
+        "projectUniqueName": "D:\\Projects\\.NET\\Web\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj",
         "projectName": "DNEBlazor.Data",
-        "projectPath": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj",
+        "projectPath": "D:\\Projects\\.NET\\Web\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj",
         "packagesPath": "C:\\Users\\TAHMID RADIT\\.nuget\\packages\\",
-        "outputPath": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\obj\\",
+        "outputPath": "D:\\Projects\\.NET\\Web\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\TAHMID RADIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,21 +72,17 @@
         }
       }
     },
-    "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {
+    "D:\\Projects\\.NET\\Web\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj",
+        "projectUniqueName": "D:\\Projects\\.NET\\Web\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj",
         "projectName": "DNEBlazor.Repository",
-        "projectPath": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj",
+        "projectPath": "D:\\Projects\\.NET\\Web\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\DNEBlazor.Repository.csproj",
         "packagesPath": "C:\\Users\\TAHMID RADIT\\.nuget\\packages\\",
-        "outputPath": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\obj\\",
+        "outputPath": "D:\\Projects\\.NET\\Web\\GitRepo\\DNEBlazor\\DNEBlazor.Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\TAHMID RADIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,8 +96,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
-                "projectPath": "G:\\Projects\\.NET C#\\Web Application\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj"
+              "D:\\Projects\\.NET\\Web\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj": {
+                "projectPath": "D:\\Projects\\.NET\\Web\\GitRepo\\DNEBlazor\\DNEBlazor.Data\\DNEBlazor.Data.csproj"
               }
             }
           }

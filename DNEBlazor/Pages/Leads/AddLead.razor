@@ -1,12 +1,12 @@
 ﻿@page "/AddLead"
 @using DNEBlazor.Data.Models
 @attribute [Authorize]
-
 @using DNEBlazor.Repository.Data;
 @using DNEBlazor.Service;
 @using Microsoft.AspNetCore.Http;
 @using Microsoft.AspNetCore.Identity;
 @inject DNEBlazor.Repository.ILead iLead;
+@*@inherits DNEBlazor.Pages.Leads.AddLeadModel*@
 
 <center>
     <h3>AddLead</h3> <br />
@@ -71,9 +71,9 @@
     [Inject]
     protected AuthenticationStateProvider authenticationStateProvider { get; set; }
     Lead lead = new Lead();
-    IEnumerable<Category> Categories => iLead.RenderCategoriesList();
+    List<Category> Categories => iLead.RenderCategoriesList();
     [Inject]
-	public NavigationManager UrlNavigationManager { get; set; }
+	public NavigationManager navigationManager { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
@@ -93,7 +93,7 @@
         if (lead.Id == 0)
         {
             lead = iLead.Add(lead);
-            UrlNavigationManager.NavigateTo("/leadsview");
+            navigationManager.NavigateTo("/leadsview");
         }
 
         lead = new Lead();
@@ -102,6 +102,6 @@
     
     public void Redirect()
     {
-        UrlNavigationManager.NavigateTo("/leadsview");
+        navigationManager.NavigateTo("/leadsview");
     }
 }

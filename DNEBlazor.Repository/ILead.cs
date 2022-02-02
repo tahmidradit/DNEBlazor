@@ -13,8 +13,8 @@ namespace DNEBlazor.Repository
         public Lead Add(Lead lead);
         public Task<Lead> Update(Lead lead, AuthenticationStateProvider authenticationStateProviderInjected);
         public string Delete(int Id);
-        public Lead GetLead(int Id);
+        public Task<Lead> GetLead(int Id);
         public List<Lead> ToListLeads();
-        public IEnumerable<Category> RenderCategoriesList();
+        public List<Category> RenderCategoriesList();
     }
 }

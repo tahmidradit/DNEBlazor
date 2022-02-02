@@ -1,15 +1,16 @@
-﻿@page "/EditLead/{Id:int}"
-@using DNEBlazor.Data.Models
+﻿@page "/EditLead/{id}"
 @attribute [Authorize]
-
+@using DNEBlazor.Data.Models
 @using DNEBlazor.Repository.Data;
 @using DNEBlazor.Service;
 @using Microsoft.AspNetCore.Http;
 @using Microsoft.AspNetCore.Identity;
 @inject DNEBlazor.Repository.ILead iLead;
+@inject DNEBlazor.Repository.ICategory iCategory;
+@*@inherits DNEBlazor.Pages.Leads.AddLeadModel*@
 
 <center>
-    <h3>AddLead</h3> <br />
+    <h3>Edit Lead</h3> <br />
 </center>
 
 
@@ -71,14 +72,18 @@
     [Inject]
     protected AuthenticationStateProvider authenticationStateProvider { get; set; }
     Lead lead = new Lead();
-    IEnumerable<Category> Categories => iLead.RenderCategoriesList();
+    List<Category> Categories => iCategory.ToListCategories();
     [Inject]
-	public NavigationManager UrlNavigationManager { get; set; }
+    public NavigationManager navigationManager { get; set; }
+
+    [Parameter]
+    public string Id { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         var authenticationStateProviderAsync = await authenticationStateProvider.GetAuthenticationStateAsync();
         var user = authenticationStateProviderAsync.User.Claims;
+
         lead = new Lead()
         {
             CreatedByUserId = user.FirstOrDefault().Value,
@@ -87,21 +92,18 @@
             DateUpdated = DateTime.Now
         };
 
+        lead = await iLead.GetLead(int.Parse(Id));
     }
-    public void Save()
+    public async Task Save()
     {
-        if (lead.Id == 0)
-        {
-            lead = iLead.Add(lead);
-            UrlNavigationManager.NavigateTo("/leadsview");
-        }
-
-        lead = new Lead();
-
+        lead = await iLead.Update(lead, authenticationStateProvider);
+        navigationManager.NavigateTo("/leadsview");
     }
     
     public void Redirect()
     {
-        UrlNavigationManager.NavigateTo("/leadsview");
+        navigationManager.NavigateTo("/leadsview");
     }
+    
 }
+
