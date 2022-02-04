@@ -17,8 +17,6 @@ namespace DNEBlazor.Data.Models
 
         [Required]
         public string LastName { get; set; }
-
-        [Required]
         public string Email { get; set; }
         public string Phone { get; set; }
         public Category Category { get; set; }
