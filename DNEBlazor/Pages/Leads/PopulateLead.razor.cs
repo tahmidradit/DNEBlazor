@@ -26,12 +26,11 @@ namespace DNEBlazor.Pages.Leads
         public Lead Lead = new Lead();
         public List<Category> Categories => iCategory.ToListCategories();
 
-        //[Parameter]
-        //public string Id { get; set; }
+        [Parameter]
+        public string Id { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
-            //Lead = await iLead.GetLead(int.Parse(Id));
             var authenticationStateProviderAsync = await authenticationStateProvider.GetAuthenticationStateAsync();
             var user = authenticationStateProviderAsync.User.Claims;
 
@@ -42,12 +41,14 @@ namespace DNEBlazor.Pages.Leads
                 DateCreated = DateTime.Now,
                 DateUpdated = DateTime.Now
             };
+
+            Lead = await iLead.GetLead(int.Parse(Id));
         }
-        public void Save()
+        public async Task SaveAsync()
         {
             
 
-            Lead =  iLead.Add(Lead);
+            Lead =  await iLead.Add(Lead);
             navigationManager.NavigateTo("/leadsview");
         }
 

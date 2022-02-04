@@ -19,10 +19,10 @@ namespace DNEBlazor.Service
         {
             this.context = context;
         }
-        public Lead Add(Lead lead)
+        public async Task<Lead> Add(Lead lead)
         {
-            context.Leads.Add(lead);
-            context.SaveChanges();
+            await context.Leads.AddAsync(lead);
+            await context.SaveChangesAsync();
             return lead;
         }
 

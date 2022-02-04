@@ -10,7 +10,7 @@ namespace DNEBlazor.Repository
 {
     public interface ILead
     {
-        public Lead Add(Lead lead);
+        public Task<Lead> Add(Lead lead);
         public Task<Lead> Update(Lead lead, AuthenticationStateProvider authenticationStateProviderInjected);
         public string Delete(int Id);
         public Task<Lead> GetLead(int Id);
