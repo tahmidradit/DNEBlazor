@@ -1,12 +1,22 @@
-﻿@page "/PopulateLead"
-@page "/PopulateLead/{id}"
+﻿@page "/PopulateLead/New"
+@page "/PopulateLead/Edit/{Id:int}"
 @attribute [Authorize]
 @inherits DNEBlazor.Pages.Leads.PopulateLeadModel
 
 <div class="widget-header">
     <div class="row">
         <div class="col-md-4"><a href="/leadsview"><i class="fa fa-arrow-circle-o-left" style="font-size:24px; color:blue"></i></a></div>
-        <div class="col-md-4"> <h2>Edit Lead</h2> </div>
+        <div class="col-md-4"> 
+            @*@if(lead.Id == 0)
+             {
+                <h2>Add Lead</h2>
+            }
+            else
+            {
+                <h2>Edit Lead</h2>
+            }*@
+             <h2>Populate Lead</h2>
+        </div>
         <div class="col-md-4" align="right">
             <EditForm Model="@Lead" OnValidSubmit="SaveAsync">
                 <input type="submit" style="width:9rem;" class="btn btn-primary  btn-sm text-white mt-3" value="Save"> &nbsp;

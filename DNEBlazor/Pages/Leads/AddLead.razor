@@ -73,7 +73,7 @@
     Lead lead = new Lead();
     List<Category> Categories => iLead.RenderCategoriesList();
     [Inject]
-	public NavigationManager navigationManager { get; set; }
+    public NavigationManager navigationManager { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
@@ -88,11 +88,11 @@
         };
 
     }
-    public void Save()
+    public async void Save()
     {
         if (lead.Id == 0)
         {
-            lead = iLead.Add(lead);
+            lead = await iLead.Add(lead);
             navigationManager.NavigateTo("/leadsview");
         }
 

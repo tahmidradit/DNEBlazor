@@ -30,7 +30,7 @@ namespace DNEBlazor.Pages.Leads
         {
             if (Lead.Id == 0)
             {
-                Lead = iLead.Add(Lead);
+                Lead = await iLead.Add(Lead);
             }
             else
             {
